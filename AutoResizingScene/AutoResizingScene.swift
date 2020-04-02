@@ -91,7 +91,7 @@ public class AutoResizingScene : Scene, WindowResizeHandler {
         let scaleY = Double(fromLocal.y - localViewportRect.top) / Double(localViewportRect.size.height)
         
         return Point(x:Int((scaleX * Double(globalViewportRect.size.width)).rounded()) + globalViewportRect.left,
-                     y:Int((scaleY * Double(globalViewportRect.size.height)).rounded()) + globalViewportRect.left)
+                     y:Int((scaleY * Double(globalViewportRect.size.height)).rounded()) + globalViewportRect.top)
     }
 
     // ********************************************************************************
